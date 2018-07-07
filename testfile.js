@@ -5,7 +5,7 @@ module.export = class TestMe {
 
     }
 
-    test(){
-        return true;
+    sum(a, b){
+        return a + b;
     }
 } 
