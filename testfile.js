@@ -5,6 +5,11 @@ module.export = class TestMe {
 
     }
 
+    /**
+     * Returns the sum of two numbers
+     * @param {number} number 
+     * @param {number} number
+     */
     sum(a, b){
         return a + b;
     }
