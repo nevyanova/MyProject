@@ -1,16 +1,36 @@
 'use strict'
 
-module.export = class TestMe {
-    constructor() {
+module.export = class SimpleCalculations {
 
+    /**
+     * Creates an instance of SimpleCalculations
+     * @param {number} a 
+     * @param {number} b 
+     */
+    constructor(a, b) {
+        this.a = a;
+        this.b = b;
     }
 
     /**
      * Returns the sum of two numbers
-     * @param {number} number 
-     * @param {number} number
      */
-    sum(a, b){
-        return a + b;
+    sum(){
+        return this.a + this.b;
     }
+
+    /**
+     * Returns the average of two numbers
+     */
+    average() {
+        return this.a + this.b / 2;
+    }
+
+    /**
+     * Devide two numbers
+     */
+    divide() {
+        return this.a / this.b;
+    }
+
 } 
